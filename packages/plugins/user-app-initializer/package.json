@@ -1,5 +1,5 @@
 {
-  "name": "@nocobase/plugin-system-initializer",
+  "name": "@nocobase/plugin-user-app-initializer",
   "version": "0.7.4-alpha.7",
   "main": "lib/server/index.js",
   "dependencies": {},

@@ -1,6 +1,6 @@
 import { InstallOptions, Plugin } from '@nocobase/server';
 
-export class SystemInitializerPlugin extends Plugin {
+export class UserAppInitializerPlugin extends Plugin {
     getName(): string {
         return this.getPackageName(__dirname);
     }
@@ -29,4 +29,4 @@ export class SystemInitializerPlugin extends Plugin {
     }
 }
 
-export default SystemInitializerPlugin;
+export default UserAppInitializerPlugin;
