@@ -1,0 +1,79 @@
+{
+  type: "void",
+  "x-component": "Menu",
+  "x-designer": "Menu.Designer",
+  "x-initializer": "MenuItemInitializers",
+  "x-component-props": {
+    mode: "mix",
+    theme: "dark",
+    onSelect: "{{ onSelect }}",
+    sideMenuRefScopeKey: "sideMenuRef",
+  },
+  properties: {
+    ow5eaw7vglj: {
+      _isJSONSchemaObject: true,
+      version: "2.0",
+      type: "void",
+      title: "系统管理",
+      "x-component": "Menu.SubMenu",
+      "x-decorator": "ACLMenuItemProvider",
+      "x-component-props": {
+        icon: "settingoutlined",
+      },
+      "x-server-hooks": [
+        {
+          type: "onSelfCreate",
+          method: "bindMenuToRole",
+        },
+      ],
+      properties: {
+        "4rq0kw6oodn": {
+          _isJSONSchemaObject: true,
+          version: "2.0",
+          type: "void",
+          title: "用户管理",
+          "x-component": "Menu.Item",
+          "x-decorator": "ACLMenuItemProvider",
+          "x-component-props": {
+            icon: "useroutlined",
+          },
+          "x-server-hooks": [
+            {
+              type: "onSelfCreate",
+              method: "bindMenuToRole",
+            },
+          ],
+          "x-uid": "cwk2mxw5vg9",
+          "x-async": false,
+          "x-index": 1,
+        },
+        g6u4rnpxxib: {
+          _isJSONSchemaObject: true,
+          version: "2.0",
+          type: "void",
+          title: "用户组管理",
+          "x-component": "Menu.Item",
+          "x-decorator": "ACLMenuItemProvider",
+          "x-component-props": {
+            icon: "teamoutlined",
+          },
+          "x-server-hooks": [
+            {
+              type: "onSelfCreate",
+              method: "bindMenuToRole",
+            },
+          ],
+          "x-uid": "rkyquzoli2c",
+          "x-async": false,
+          "x-index": 2,
+        },
+      },
+      "x-uid": "33xc6s78edu",
+      "x-async": false,
+      "x-index": 1,
+    },
+  },
+  name: "f96233hnczy",
+  "x-uid": "4usrp4z5fll",
+  "x-async": false,
+}
