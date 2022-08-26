@@ -10,7 +10,7 @@
     "sideMenuRefScopeKey": "sideMenuRef"
   },
   "properties": {
-    "ow5eaw7vglj": {
+    "z2jc7iz55xq": {
       "_isJSONSchemaObject": true,
       "version": "2.0",
       "type": "void",
@@ -27,7 +27,7 @@
         }
       ],
       "properties": {
-        "4rq0kw6oodn": {
+        "suxvff7krau": {
           "_isJSONSchemaObject": true,
           "version": "2.0",
           "type": "void",
@@ -43,37 +43,17 @@
               "method": "bindMenuToRole"
             }
           ],
-          "x-uid": "cwk2mxw5vg9",
+          "x-uid": "dhv82ht2htn",
           "x-async": false,
           "x-index": 1
-        },
-        "g6u4rnpxxib": {
-          "_isJSONSchemaObject": true,
-          "version": "2.0",
-          "type": "void",
-          "title": "用户组管理",
-          "x-component": "Menu.Item",
-          "x-decorator": "ACLMenuItemProvider",
-          "x-component-props": {
-            "icon": "teamoutlined"
-          },
-          "x-server-hooks": [
-            {
-              "type": "onSelfCreate",
-              "method": "bindMenuToRole"
-            }
-          ],
-          "x-uid": "rkyquzoli2c",
-          "x-async": false,
-          "x-index": 2
         }
       },
-      "x-uid": "33xc6s78edu",
+      "x-uid": "zr7t9xsf4hz",
       "x-async": false,
       "x-index": 1
     }
   },
-  "name": "f96233hnczy",
-  "x-uid": "4usrp4z5fll",
+  "name": "tt2ny1ec2xl",
+  "x-uid": "hwwilngqa2h",
   "x-async": false
 }

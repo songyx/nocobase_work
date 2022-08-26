@@ -1,0 +1,111 @@
+{
+  "type": "void",
+  "x-component": "Menu",
+  "x-designer": "Menu.Designer",
+  "x-initializer": "MenuItemInitializers",
+  "x-component-props": {
+    "mode": "mix",
+    "theme": "dark",
+    "onSelect": "{{ onSelect }}",
+    "sideMenuRefScopeKey": "sideMenuRef"
+  },
+  "properties": {
+    "nh5gy9n95r1": {
+      "_isJSONSchemaObject": true,
+      "version": "2.0",
+      "type": "void",
+      "title": "system",
+      "x-component": "Menu.SubMenu",
+      "x-decorator": "ACLMenuItemProvider",
+      "x-component-props": {},
+      "x-server-hooks": [
+        {
+          "type": "onSelfCreate",
+          "method": "bindMenuToRole"
+        }
+      ],
+      "properties": {
+        "4zq6afs643e": {
+          "_isJSONSchemaObject": true,
+          "version": "2.0",
+          "type": "void",
+          "title": "Users",
+          "x-component": "Menu.Item",
+          "x-decorator": "ACLMenuItemProvider",
+          "x-component-props": {},
+          "x-server-hooks": [
+            {
+              "type": "onSelfCreate",
+              "method": "bindMenuToRole"
+            }
+          ],
+          "x-uid": "9xyjui3vkdq",
+          "x-async": false,
+          "x-index": 1
+        },
+        "o4pplc1vt3c": {
+          "_isJSONSchemaObject": true,
+          "version": "2.0",
+          "type": "void",
+          "title": "User groups",
+          "x-component": "Menu.Item",
+          "x-decorator": "ACLMenuItemProvider",
+          "x-component-props": {},
+          "x-server-hooks": [
+            {
+              "type": "onSelfCreate",
+              "method": "bindMenuToRole"
+            }
+          ],
+          "x-uid": "l05pwh3nhr0",
+          "x-async": false,
+          "x-index": 2
+        }
+      },
+      "x-uid": "9oy80kl23j0",
+      "x-async": false,
+      "x-index": 1
+    },
+    "6pwssnrypbl": {
+      "_isJSONSchemaObject": true,
+      "version": "2.0",
+      "type": "void",
+      "title": "game",
+      "x-component": "Menu.SubMenu",
+      "x-decorator": "ACLMenuItemProvider",
+      "x-component-props": {},
+      "x-server-hooks": [
+        {
+          "type": "onSelfCreate",
+          "method": "bindMenuToRole"
+        }
+      ],
+      "properties": {
+        "jbq811iya31": {
+          "_isJSONSchemaObject": true,
+          "version": "2.0",
+          "type": "void",
+          "title": "abc1",
+          "x-component": "Menu.Item",
+          "x-decorator": "ACLMenuItemProvider",
+          "x-component-props": {},
+          "x-server-hooks": [
+            {
+              "type": "onSelfCreate",
+              "method": "bindMenuToRole"
+            }
+          ],
+          "x-uid": "py0662vta1w",
+          "x-async": false,
+          "x-index": 1
+        }
+      },
+      "x-uid": "ubc9ol661b7",
+      "x-async": false,
+      "x-index": 2
+    }
+  },
+  "name": "ap2sgkcofyk",
+  "x-uid": "aaomndhyl4k",
+  "x-async": false
+}
