@@ -1,3 +1,10 @@
+import { UserRepository } from '@nocobase/plugin-user-groups';
+/**
+ * a middle ware which will set the user's roles.
+ * @param ctx 
+ * @param next 
+ * @returns 
+ */
 export async function setCurrentRole(ctx, next) {
   let currentRole = ctx.get('X-Role');
 
@@ -10,8 +17,11 @@ export async function setCurrentRole(ctx, next) {
     return next();
   }
 
-  const repository = ctx.db.getRepository('users.roles', ctx.state.currentUser.id);
-  const roles = await repository.find();
+  // const repository = ctx.db.getRepository('users.roles', ctx.state.currentUser.id);
+  // const roles = await repository.find();
+  const userRepository = ctx.db.getCollection('users').repository as UserRepository;
+  const roles = await userRepository.getTreeRoles(ctx.state.currentUser.id);
+  
   ctx.state.currentUser.setDataValue('roles', roles);
 
   if (roles.length == 1) {
