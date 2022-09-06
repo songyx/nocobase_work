@@ -6,7 +6,7 @@ import _ from 'lodash';
  * the repository for the usergroups.
  */
 export class UserGroupsRepository extends Repository {
-    private static readonly roleAttr = ['createdAt', 'updatedAt', 'name', 'title', 'description', 'strategy', 'default', 'hidden', 'allowConfigure', 'allowNewMenu', 'sort',];
+    private static readonly roleAttr = ['createdAt', 'updatedAt', 'name', 'title', 'description', 'strategy', 'default', 'hidden', 'allowConfigure', 'allowNewMenu', 'sort','rolesUsers',];
     private static readonly groupAttr = ['name', 'gid', 'pid', 'ptree', 'sort', 'status', 'createdAt', 'updatedAt'];
     /**
      * get all ther groups of the input ptree.
